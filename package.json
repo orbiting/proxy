@@ -1,0 +1,30 @@
+{
+  "name": "yaproxy",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "description": "proxy a secure production API to localhost",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_ENV=development node index.js"
+  },
+  "bin": {
+    "yaproxy": "./index.js"
+  },
+  "author": "Thomas Preusse <t@preus.se> (https://t.preus.se/)",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orbiting/proxy.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "http-proxy-middleware": "^0.18.0"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1"
+  }
+}
