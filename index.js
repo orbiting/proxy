@@ -48,7 +48,7 @@ app.use(
       ),
     onProxyRes: (proxyRes) => {
       if (parseEnv(COOKIE_STRIP_SECURE) === true) {
-        proxyRes.headers['set-cookie'] = proxyRes.headers['set-cookie']
+        proxyRes.headers['set-cookie'] = (proxyRes.headers['set-cookie'] || [])
           .map(header => header.replace('; Secure', ''))
       }
     }
