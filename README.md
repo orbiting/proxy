@@ -10,6 +10,11 @@ npm i yaproxy -g
 TARGET=https://api.republik.ch yaproxy
 ```
 
+Specify one or more explicit allowed cors origins:
+```
+CORS_ORIGIN=http://localhost:3010,http://localhost:3003 TARGET=https://api.republik.ch yaproxy
+```
+
 ## Config
 
 ```
