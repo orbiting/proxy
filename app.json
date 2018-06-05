@@ -1,0 +1,25 @@
+{
+  "env": {
+    "TARGET": {
+      "description": "base url you want to proxy, e.g. api.example.com",
+      "value": ""
+    },
+    "CORS_ORIGIN": {
+      "description": "true/false or comma-separated allowed cors origins, e.g. staging.example.com",
+      "value": "true"
+    },
+    "COOKIE_DOMAIN_REWRITE": {
+      "description": "false or comma-separated source:target, e.g. www.example.com:staging.example.com",
+      "value": "false"
+    },
+    "COOKIE_STRIP_SECURE": {
+      "description": "should only be used on localhost",
+      "value": "false"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

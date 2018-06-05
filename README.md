@@ -28,3 +28,9 @@ COOKIE_DOMAIN_REWRITE=*:localhost
 # true/false
 COOKIE_STRIP_SECURE=true
 ```
+
+## Deploy
+
+The repository contains a `app.json` manifesto and can easily be deployed. Don't be evil.
+
+- [Deploy to Heroku](https://heroku.com/deploy)
