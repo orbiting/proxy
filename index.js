@@ -50,6 +50,7 @@ app.use(
       if (parseEnv(COOKIE_STRIP_SECURE) === true) {
         proxyRes.headers['set-cookie'] = (proxyRes.headers['set-cookie'] || [])
           .map(header => header.replace('; Secure', ''))
+          .map(header => header.replace('; SameSite=None', '; SameSite=Lax'))
       }
     }
   })
