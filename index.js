@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 const express = require('express')
-const proxy = require('http-proxy-middleware')
+const { createProxyMiddleware } = require('http-proxy-middleware')
 const cors = require('cors')
 
 const DEV = process.env.NODE_ENV && process.env.NODE_ENV !== 'production'
@@ -35,7 +35,7 @@ app.use(cors({
 }))
 app.use(
   '/',
-  proxy({
+  createProxyMiddleware({
     target: TARGET,
     changeOrigin: true,
     cookieDomainRewrite:
