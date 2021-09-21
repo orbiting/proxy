@@ -20,11 +20,11 @@
     "url": "https://github.com/orbiting/proxy.git"
   },
   "dependencies": {
-    "cors": "^2.8.4",
-    "express": "^4.16.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "http-proxy-middleware": "^0.18.0"
   },
   "devDependencies": {
-    "dotenv": "^5.0.1"
+    "dotenv": "^10.0.0"
   }
 }
